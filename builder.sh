@@ -32,7 +32,7 @@ cd crdroid
 repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs --depth 1 
 
 # clone manifest
-git clone https://github.com/thz22/local_manifest_blossomy.git -b crdroid .repo/local_manifests
+git clone https://github.com/thz22/local_manifest_odessa.git -b main .repo/local_manifests
 
 # sync
 repo sync -j8
