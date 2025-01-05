@@ -23,13 +23,13 @@ git config --global user.name Thiago
 git config --global user.email thigo6617@gmail.com
 
 # make dir
-mkdir crdroid
+mkdir crdroid1
 
 # cd
 cd crdroid
 
 # init repo
-repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs --depth 1 
+repo init -u https://github.com/crdroidandroid/android.git -b 14.0 --git-lfs --depth 1 
 
 # clone manifest
 git clone https://github.com/thz22/local_manifest_odessa.git -b main .repo/local_manifests
