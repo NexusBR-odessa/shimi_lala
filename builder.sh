@@ -32,7 +32,7 @@ cd lineage2
 repo init -u https://github.com/crdroidandroid/android.git -b 11.0 --git-lfs --depth=1
 
 # clone manifest
-git clone https://github.com/thiagochizz44/local_manifests_odessa.git -b los11 .repo/local_manifests
+git clone https://github.com/thiagochizz44/local_manifests_odessa.git -b test11 .repo/local_manifests
 
 # sync
 repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j8
