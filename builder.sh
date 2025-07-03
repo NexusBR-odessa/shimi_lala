@@ -35,4 +35,4 @@ repo init -u https://github.com/LineageOS/android.git -b lineage-22.2 --git-lfs 
 git clone https://github.com/Frost444/local_manifests_odessa.git -b main15 .repo/local_manifests
 
 # sync
-repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j10
+repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j12
