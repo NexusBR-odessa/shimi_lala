@@ -29,10 +29,10 @@ mkdir lineage2
 cd lineage2
 
 # init repo
-repo init -u https://github.com/Evolution-X/manifest -b bka --git-lfs --depth=1
+repo init -u https://github.com/hentaiOS/platform_manifest -b Vallhound --git-lfs --depth=1
 
 # clone manifest
-git clone https://github.com/Frost444/local_manifests_odessa.git -b main15 .repo/local_manifests
+git clone https://github.com/Frost444/local_manifests_blossom.git -b lineage-22.2 .repo/local_manifests
 
 # sync
 repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j12
