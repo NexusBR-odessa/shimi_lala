@@ -35,4 +35,4 @@ repo init -u https://github.com/yaap/manifest.git -b sixteen --git-lfs --depth=1
 git clone https://github.com/Frost444/local_manifests_odessa.git -b main15 .repo/local_manifests
 
 # sync
-repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j12
+repo sync -j12 --no-tags --no-clone-bundle --current-branch
