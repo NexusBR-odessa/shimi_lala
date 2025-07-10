@@ -29,7 +29,7 @@ mkdir lineage2
 cd lineage2
 
 # init repo
-repo init -u https://github.com/hentaiOS/platform_manifest -b Vallhound --git-lfs --depth=1
+repo init -u https://github.com/Frost444/platform_manifest -b Vallhound --git-lfs --depth=1
 
 # clone manifest
 git clone https://github.com/Frost444/local_manifests_blossom.git -b lineage-22.2 .repo/local_manifests
