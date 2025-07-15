@@ -29,7 +29,7 @@ mkdir lineage2
 cd lineage2
 
 # init repo
-repo init -u https://github.com/Frost444/android.git -b 14.0 --git-lfs --depth=1
+repo init -u https://github.com/DerpFest-AOSP/manifest.git -b 14 --depth=1
 
 # clone manifest
 git clone https://github.com/Frost444/local_manifests_odessa.git -b main .repo/local_manifests
