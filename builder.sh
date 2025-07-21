@@ -29,10 +29,10 @@ mkdir lineage2
 cd lineage2
 
 # init repo
-repo init -u https://github.com/LineageOS/android.git -b lineage-23.0 --git-lfs --depth=1
+repo init -u https://github.com/Evolution-X/manifest -b bka --git-lfs --depth=1
 
 # clone manifest
 git clone https://github.com/Frost444/local_manifests_odessa.git -b main15 .repo/local_manifests
 
 # sync
-repo sync -j12 --no-tags --no-clone-bundle --current-branch
+repo sync -c -j10 --force-sync --no-clone-bundle --no-tags
