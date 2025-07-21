@@ -35,4 +35,4 @@ repo init -u https://github.com/Evolution-X/manifest -b bka --git-lfs --depth=1
 git clone https://github.com/Frost444/local_manifests_odessa.git -b main15 .repo/local_manifests
 
 # sync
-repo sync -c -j10 --force-sync --no-clone-bundle --no-tags
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
