@@ -32,7 +32,7 @@ cd lineage2
 repo init --depth=1 --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b 16 -g default,-mips,-darwin,-notdefault
 
 # clone manifest
-git clone https://github.com/Frost444/local_manifests_odessa.git -b main15 .repo/local_manifests
+git clone https://github.com/NexusBR-odessa/local_manifests_odessa.git -b main15 .repo/local_manifests
 
 # sync
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all)
