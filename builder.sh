@@ -29,7 +29,7 @@ mkdir lineage2
 cd lineage2
 
 # init repo
-repo init --depth=1 --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b 16 -g default,-mips,-darwin,-notdefault
+repo init -u https://github.com/WitAqua/manifest.git -b 16.0 --git-lfs
 
 # clone manifest
 git clone https://github.com/NexusBR-odessa/local_manifests_odessa.git -b main15 .repo/local_manifests
