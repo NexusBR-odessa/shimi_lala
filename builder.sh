@@ -29,7 +29,7 @@ mkdir lineage2
 cd lineage2
 
 # init repo
-repo init -u https://github.com/WitAqua/manifest.git -b 16.0 --git-lfs
+repo init -u https://github.com/CherishOS/android_manifest.git -b sixteen
 
 # clone manifest
 git clone https://github.com/NexusBR-odessa/local_manifests_odessa.git -b main15 .repo/local_manifests
