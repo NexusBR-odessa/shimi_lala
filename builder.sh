@@ -17,10 +17,10 @@ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 chmod a+x ~/bin/repo
 
 # setup git account
-git config --global user.name Thiago
+git config --global user.name NexusBR-odessa
 
 # setup email
-git config --global user.email thigo6617@gmail.com
+git config --global user.email miguel03barreto@gmail.com
 
 # make dir
 mkdir lineage2
@@ -29,7 +29,7 @@ mkdir lineage2
 cd lineage2
 
 # init repo
-repo init -u https://github.com/crdroidx/android.git -b 16.0 --git-lfs --no-clone-bundle
+repo init -u https://github.com/Miku-UI/manifesto -b Blooming --git-lfs
 
 # clone manifest
 git clone https://github.com/NexusBR-odessa/local_manifests_odessa.git -b main15 .repo/local_manifests
