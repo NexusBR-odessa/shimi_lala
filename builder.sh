@@ -29,7 +29,7 @@ mkdir lineage2
 cd lineage2
 
 # init repo
-repo init -u https://github.com/VoltageOS/manifest.git -b 16 --git-lfs
+repo init -u https://github.com/PixelOS-AOSP/manifest.git -b sixteen --git-lfs
 
 # clone manifest
 git clone https://github.com/NexusBR-odessa/local_manifests_odessa.git -b main15 .repo/local_manifests
