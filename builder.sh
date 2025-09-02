@@ -29,10 +29,13 @@ mkdir lineage2
 cd lineage2
 
 # init repo
-repo init -u https://github.com/yaap/manifest.git -b sixteen --git-lfs
+repo init -u https://github.com/RisingOS-Revived/android -b sixteen-los --git-lfs
 
 # clone manifest
 git clone https://github.com/NexusBR-odessa/local_manifests_odessa.git -b main15 .repo/local_manifests
 
 # sync
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all)
+
+# build all that shit
+. build/envsetup.sh && riseup odessa user && rise b
