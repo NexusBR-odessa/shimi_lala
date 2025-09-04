@@ -17,10 +17,10 @@ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 chmod a+x ~/bin/repo
 
 # setup git account
-git config --global user.name Thiago
+git config --global user.name NexusBR-odessa
 
 # setup email
-git config --global user.email thigo6617@gmail.com
+git config --global user.email miguel03barreto@gmail.com
 
 # make dir
 mkdir lineage2
@@ -29,10 +29,10 @@ mkdir lineage2
 cd lineage2
 
 # init repo
-repo init -u https://github.com/DerpFest-AOSP/manifest.git -b 14 --depth=1
+repo init -u https://github.com/LineageOS/android.git -b lineage-22.2 --git-lfs
 
 # clone manifest
-git clone https://github.com/Frost444/local_manifests_odessa.git -b main .repo/local_manifests
+git clone https://github.com/NexusBR-odessa/local_manifests_odessa15.git -b 15.0-QPR2 .repo/local_manifests
 
 # sync
-repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j8
+repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync
