@@ -17,22 +17,23 @@ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 chmod a+x ~/bin/repo
 
 # setup git account
-git config --global user.name Thiago
+git config --global user.name NexusBR-odessa
 
 # setup email
-git config --global user.email thigo6617@gmail.com
+git config --global user.email miguel03barreto@gmail.com
 
 # make dir
-mkdir crdroid1
+mkdir lineage2
 
 # cd
-cd crdroid
+cd lineage2
 
 # init repo
-repo init -u https://github.com/crdroidandroid/android.git -b 14.0 --git-lfs --depth 1 
+repo init -u https://github.com/LineageOS/android.git -b lineage-22.1 --git-lfs
 
 # clone manifest
-git clone https://github.com/thz22/local_manifest_odessa.git -b main .repo/local_manifests
+git clone https://github.com/NexusBR-odessa/local_manifest_odessa15.git -b odessa .repo/local_manifests
 
 # sync
-repo sync -j8
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+
