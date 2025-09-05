@@ -29,7 +29,7 @@ mkdir lineage2
 cd lineage2
 
 # init repo
-repo init -u https://github.com/LineageOS/android.git -b lineage-22.2 --git-lfs
+repo init -u https://github.com/DerpFest-LOS/android_manifest.git -b 15.2 --git-lfs
 
 # clone manifest
 git clone https://github.com/NexusBR-odessa/local_manifest_odessa15.git -b 15.0-QPR2 .repo/local_manifests
