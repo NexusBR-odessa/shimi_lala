@@ -32,8 +32,7 @@ cd lineage2
 repo init -u https://github.com/LineageOS/android.git -b lineage-22.1 --git-lfs
 
 # clone manifest
-git clone https://github.com/NexusBR-odessa/local_manifest_odessa15.git -b odessa .repo/local_manifests
+git clone https://github.com/NexusBR-odessa/local_manifest_odessa15.git -b 15.0-QPR1 .repo/local_manifests
 
 # sync
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
-
