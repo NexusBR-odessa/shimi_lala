@@ -17,10 +17,10 @@ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 chmod a+x ~/bin/repo
 
 # setup git account
-git config --global user.name Thiago
+git config --global user.name NexusBR-odessa
 
 # setup email
-git config --global user.email thigo6617@gmail.com
+git config --global user.email miguel03barreto@gmail.com
 
 # make dir
 mkdir lineage2
@@ -32,8 +32,7 @@ cd lineage2
 repo init -u https://github.com/LineageOS/android.git -b lineage-18.1 --git-lfs
 
 # clone manifest
-git clone https://github.com/Samsung-SDM439/android_vendor_samsung_m01q.git -b lineage-18.1 /vendor/samsung/m01q
-git clone https://github.com/smiley9000/android_device_samsung_sdm439.git -b Android-11 /device/samsung/sdm439
-git clone https://github.com/Samsung-SDM439/caf_kernel_samsung_m01q.git /kernel/samsung/sdm439
+git clone https://github.com/NexusBR-odessa/local_manifest_a01q.git -b main .repo/local_manifests
+
 # sync
-repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j8
+repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync
