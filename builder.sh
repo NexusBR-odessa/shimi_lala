@@ -32,7 +32,7 @@ cd lineage2
 repo init -u https://https://github.com/salvogiangri/UN1CA -b sixteen --git-lfs
 
 # clone manifest
-git clone https://github.com/NexusBR-odessa/local_manifest_x1s.git -b 15.0-QPR2 .repo/local_manifests
+git clone https://github.com/NexusBR-odessa/local_manifests_x1s.git -b main .repo/local_manifests
 
 # sync
 repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync
