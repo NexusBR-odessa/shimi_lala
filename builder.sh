@@ -28,8 +28,8 @@ mkdir lineage2
 # cd
 cd lineage2
 
-# init repo
-repo init -u https://https://github.com/salvogiangri/UN1CA -b sixteen --git-lfs
+# init repo (obs: you can edit this in case if you want another rom)
+repo init -u https://github.com/Evolution-X/manifest -b bq2 --git-lfs
 
 # clone manifest
 git clone https://github.com/NexusBR-odessa/local_manifests_x1s.git -b main .repo/local_manifests
