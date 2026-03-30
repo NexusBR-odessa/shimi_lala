@@ -23,7 +23,7 @@ mkdir lineage2
 cd lineage2
 
 # init repo
-repo init -u https://github.com/Evolution-X/manifest.git -b tiramisu --git-lfs
+repo init -u https://github.com/ArrowOS/android_manifest.git -b arrow-13.1
 
 # clone manifest
 git clone https://github.com/NexusBR-odessa/local_manifest_a01q.git -b main .repo/local_manifests
