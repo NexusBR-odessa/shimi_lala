@@ -23,10 +23,10 @@ mkdir lineage2
 cd lineage2
 
 # init repo
-repo init -u https://github.com/LineageOS/android.git -b lineage-18.1 --git-lfs
+repo init -u https://github.com/Evolution-X/manifest.git -b tiramisu --git-lfs
 
 # clone manifest
 git clone https://github.com/NexusBR-odessa/local_manifest_a01q.git -b main .repo/local_manifests
 
 # sync
-repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
