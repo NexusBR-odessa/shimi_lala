@@ -50,6 +50,10 @@ else
     MANIFEST_BRANCH=${MANIFEST_BRANCH:-main}
 fi
 
+# Samsung NFC fix
+read -p "Is your device Samsung? (y/n): " input_samsung
+[[ "$input_samsung" =~ ^[Yy]$ ]] && IS_SAMSUNG=true || IS_SAMSUNG=false
+
 # Signing
 read -p "Do you want to sign the ROM? (y/n): " input_sign
 [[ "$input_sign" =~ ^[Yy]$ ]] && SIGN_ROM=true || SIGN_ROM=false
@@ -121,6 +125,20 @@ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 
 echo "===== Syncing sources (2/2) ====="
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+
+# Samsung fix
+if [[ "$IS_SAMSUNG" == true ]]; then
+    echo "===== Applying Samsung hardware fix ====="
+
+    rm -rf hardware/samsung
+
+    git clone https://github.com/LineageOS/android_hardware_samsung hardware/samsung
+
+    echo "===== Syncing Samsung NFC ====="
+    repo sync -f hardware/samsung/nfc
+else
+    echo "===== Skipping Samsung-specific setup ====="
+fi
 
 # Signing
 if [[ "$SIGN_ROM" == true ]]; then
