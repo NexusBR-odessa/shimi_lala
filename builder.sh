@@ -74,7 +74,7 @@ read -p "Do you want to use Odessa manifests? (y/n): " use_odessa
 
 if [[ "$use_odessa" == "y" || "$use_odessa" == "Y" ]]; then
     echo "===== Cloning Odessa manifests ====="
-    git clone https://github.com/NexusBR-odessa/local_manifest_odessa.git -b 16.0-QPR2 .repo/local_manifests
+    git clone https://github.com/NexusBR-odessa/local_manifests_odessa.git -b 16.0-QPR2 .repo/local_manifests
 else
     echo "===== Custom manifest selected ====="
 
