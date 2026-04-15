@@ -110,7 +110,7 @@ repo init -u "$REPO_URL" -b "$REPO_BRANCH" --git-lfs
 echo "===== Setting up manifest ====="
 
 if [[ "$USE_ODESSA" == true ]]; then
-    git clone https://github.com/NexusBR-odessa/local_manifest_odessa.git -b 16.0-QPR2 .repo/local_manifests
+    git clone https://github.com/NexusBR-odessa/local_manifests_odessa.git -b 16.0-QPR2 .repo/local_manifests
 else
     git clone "$MANIFEST_URL" -b "$MANIFEST_BRANCH" .repo/local_manifests
 fi
