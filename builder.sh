@@ -10,7 +10,7 @@ read -p "Are you in ServerHive? (y/n): " input_server
 
 # Repo
 while true; do
-    read -p "Enter manifest URL: " REPO_URL
+    read -p "Enter ROM manifest URL: " REPO_URL
     [[ -n "$REPO_URL" ]] && break || echo "URL cannot be empty."
 done
 
@@ -35,14 +35,14 @@ read -p "Enter working directory (default: ~/lineage2): " WORK_DIR
 WORK_DIR=${WORK_DIR:-$HOME/lineage2}
 
 # Manifest
-read -p "Use Odessa manifest? (y/n): " input_odessa
+read -p "Use Odessa trees manifest? (y/n): " input_odessa
 if [[ "$input_odessa" =~ ^[Yy]$ ]]; then
     USE_ODESSA=true
 else
     USE_ODESSA=false
 
     while true; do
-        read -p "Enter custom manifest URL: " MANIFEST_URL
+        read -p "Enter custom trees manifest URL: " MANIFEST_URL
         [[ -n "$MANIFEST_URL" ]] && break || echo "URL cannot be empty."
     done
 
