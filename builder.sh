@@ -31,7 +31,7 @@ while true; do
 done
 
 # Diretório
-read -p "Enter working directory (default: ~/lineage2): " WORK_DIR
+read -p "Enter working directory (default: ~/SleeperBuilder): " WORK_DIR
 WORK_DIR=${WORK_DIR:-$HOME/lineage2}
 
 # Manifest
