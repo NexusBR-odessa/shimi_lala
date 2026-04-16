@@ -32,7 +32,7 @@ done
 
 # Diretório
 read -p "Enter working directory (default: ~/SleeperBuilder): " WORK_DIR
-WORK_DIR=${WORK_DIR:-$HOME/lineage2}
+WORK_DIR=${WORK_DIR:-$HOME/SleeperBuilder}
 
 # Manifest
 read -p "Use Odessa trees manifest? (y/n): " input_odessa
