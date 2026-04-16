@@ -119,5 +119,7 @@ Configure once → let it run everything automatically.
 Perfect for:
 
 VPS environments
+
 Automated builds
+
 CI workflows
