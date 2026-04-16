@@ -146,16 +146,26 @@ fi
 if [[ "$SIGN_ROM" == true ]]; then
     echo "===== Setting up signing ====="
 
-    cd .. || exit
+    # Cria uma pasta temporária fora do WORK_DIR para clonar
+    SIGN_SCRIPT_DIR="$(dirname "$WORK_DIR")/crDroid-signed-script-temp"
+    mkdir -p "$SIGN_SCRIPT_DIR"
+    
+    cd "$SIGN_SCRIPT_DIR" || exit
     git clone https://github.com/crdroidandroid/crDroid-build-signed-script.git
 
-    mv crDroid-build-signed-script/* "$WORK_DIR"
-    rm -rf crDroid-build-signed-script
+    # Move os arquivos para dentro do WORK_DIR
+    mv crDroid-build-signed-script/* "$WORK_DIR"/ 2>/dev/null || true
+    rm -rf "$SIGN_SCRIPT_DIR"
 
     cd "$WORK_DIR" || exit
 
-    chmod +x create-signed-env.sh
-    printf '\n\n\n\n\n\n\n\n\n' | ./create-signed-env.sh
+    if [[ -f "create-signed-env.sh" ]]; then
+        chmod +x create-signed-env.sh
+        echo "===== Running create-signed-env.sh ====="
+        printf '\n\n\n\n\n\n\n\n\n' | ./create-signed-env.sh
+    else
+        echo "❌ create-signed-env.sh not found!"
+    fi
 else
     echo "===== Skipping signing ====="
 fi
