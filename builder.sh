@@ -32,7 +32,9 @@ done
 
 # Diretório
 read -p "Enter working directory (default: ~/SleeperBuilder): " WORK_DIR
-WORK_DIR=${WORK_DIR:-$HOME/SleeperBuilder}
+WORK_DIR=${WORK_DIR:-~/SleeperBuilder}
+WORK_DIR="${WORK_DIR/#\~/$HOME}"   # resolve ~
+WORK_DIR="${WORK_DIR%/}"            # remove trailing slash
 
 # Manifest
 read -p "Use Odessa trees manifest? (y/n): " input_odessa
