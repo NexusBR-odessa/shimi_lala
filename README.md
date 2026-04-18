@@ -52,7 +52,7 @@ Or simply download the .sh file.
 
 When you run the script, it will ask:
 
-If you are using ServerHive (if yes, it will skip the dependencies instalation)
+If you want to install all the dependencies
 
 Main ROM manifest URL and branch
 
