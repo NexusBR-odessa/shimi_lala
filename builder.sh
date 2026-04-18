@@ -5,7 +5,7 @@ echo "===== Initial Configuration ====="
 
 # ===== INPUT DO USUÁRIO =====
 
-read -p "Are you in ServerHive? (y/n): " input_server
+read -p "Install required dependencies? (y/n): " input_server
 [[ "$input_server" =~ ^[Yy]$ ]] && IN_SERVERHIVE=true || IN_SERVERHIVE=false
 
 # Repo
