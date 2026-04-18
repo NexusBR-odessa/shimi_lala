@@ -146,6 +146,9 @@ fi
 if [[ "$SIGN_ROM" == true ]]; then
     echo "===== Setting up signing ====="
 
+   # Deleta .android-certs para evitar erros durante o sign
+    rm -rf ~/.android-certs
+
     # Cria uma pasta temporária fora do WORK_DIR para clonar
     SIGN_SCRIPT_DIR="$(dirname "$WORK_DIR")/crDroid-signed-script-temp"
     mkdir -p "$SIGN_SCRIPT_DIR"
