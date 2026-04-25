@@ -1,4 +1,5 @@
 #!/bin/bash
+clear
 
 echo "===== Sleeper Builder Script by Miguel Barreto ====="
 echo "===== Initial Configuration ====="
